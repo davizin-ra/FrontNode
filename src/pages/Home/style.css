@@ -1,0 +1,232 @@
+body {
+  background-color: #1e1e1e;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  padding: none;
+  display: flex;
+  justify-content: center;;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+  margin: none;
+  width: 2000px;
+  justify-content: center;
+}
+
+h1 {
+  color: #fff;
+  font-size: 32px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #27292a;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+form input {
+  background-color: #27292a;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+form button {
+  background-color: #368dd9;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #2e86de;
+}
+
+.card {
+  width: 100%;
+  background-color: #27292a;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card p {
+  color: #fff;
+  font-weight: bold;
+}
+
+.card p span {
+  font-weight: normal;
+}
+
+.card button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.card img {
+  width: 60px;
+}
+
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  max-width: 90%;
+  display: flex; 
+  flex-direction: column; 
+  gap: 15px;
+}
+
+.modal-content h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+/* tabela estilo farofa */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #fff;
+}
+
+thead th {
+  border-bottom: 2px solid #fff;
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+tbody tr {
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  transition: background 0.3s ease;
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgba(255,255,255,0.05);
+}
+
+tbody tr:hover {
+  background-color: rgba(255,255,255,0.15);
+  cursor: pointer;
+}
+
+tbody td {
+  padding: 12px 15px;
+  vertical-align: middle;
+}
+
+tbody td a {
+  color: #66ccff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+tbody td a:hover {
+  color: #3399ff;
+  text-decoration: underline;
+}
+
+/* responsividade */
+@media (max-width: 768px) {
+  table thead {
+    display: none;
+  }
+
+  table tbody tr {
+    display: block;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: transparent;
+  }
+
+  table tbody td {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  table tbody td:last-child {
+    border-bottom: 0;
+  }
+
+  table tbody td::before {
+    flex-basis: 40%;
+    color: #aaa;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  table tbody td:nth-child(1)::before { content: "Músculos"; }
+  table tbody td:nth-child(2)::before { content: "Séries"; }
+  table tbody td:nth-child(3)::before { content: "Data"; }
+  table tbody td:nth-child(4)::before { content: ""; }
+
+  table tbody td a {
+    white-space: nowrap;
+  }
+}
+
+.usuarios-list{
+  width: 100%;
+}
+
+.usuarios-list{
+  width: 100%;
+  max-width: 600px;
+}
+
+.actions button{
+  color: white;
+  font-size: 120%;
+}
+
+.actions button:hover{
+  color: yellow;
+}
+
+.actions button:first-child:hover{
+  color: red;
+}
